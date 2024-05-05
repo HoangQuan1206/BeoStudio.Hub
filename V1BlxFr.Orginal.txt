@@ -1,9 +1,7 @@
-local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
-local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua"))()
-local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
-
-local Window = Fluent:CreateWindow({
-------------------------------------------------------------------------------------------------------------------------------------------------------------
+repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
+_G.Primary = Color3.fromRGB(0, 45, 255)
+_G.Light = Color3.fromRGB(46, 56, 56)
+----------------------------------------------------------------------------------------------------------------------------------------
 _G.TieuDe = "Beo Hub"
 _G.ThongBao = "Beo Hub"
 _G.ThongBaoChoose = "Blox Fruit Scripts"
