@@ -1,9 +1,8 @@
-
 getgenv().config = {
     ["Team"] = "Pirates",
     ["Use Race"] = {
         ["V3"] = true,
-        ["V4"] = true
+        ["V4"] = false
     },
     ["Info Screen"] = true,
     ["White Screen"] = false,
@@ -91,7 +90,6 @@ getgenv().config = {
         ["Link Webhook"] = "https://discord.com/api/webhooks/1222182420493766826/pmLwx3jgROMw6oA2_yQ6eDcEiXpzik1VQdTuIGHRW6h26Ve4is1oe3zzI47EN-fhJxIw",
         ["Toggle Webhook"] = true
     },
-    ["ChatSpam"] = {"Beo Hub On Top", "No Skill? Using BeoHub"},
     ["MinBountyHunt"] = 0,
     ["MaxBountyHunt"] = 30000000,
     ["SafeHealth"] = 4000
