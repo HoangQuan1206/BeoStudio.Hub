@@ -1,98 +1,108 @@
-getgenv().config = {
-    ["Team"] = "Marines",
-    ["Use Race"] = {
-        ["V3"] = true,
-        ["V4"] = true
-    },
-    ["Info Screen"] = true,
-    ["White Screen"] = false,
-    ["BypassTp"] = true,
-    ["SkipFruit"] = {
-        "Portal-Portal"
-    },
-    ["Skip Race V4 User"] = true,
-    ["MainSkillToggle"] = {
-        ["Melee"] = {
-            ["Enable"] = true,
-            ["Delay"] = 1.75,
-            ["Skills"] = {
-                ["Z"] = {
-                    ["Enable"] = true,
-                    ["HoldTime"] = 1.5,
-                },
-                [ "X"] = {
-                    ["Enable"] = true,
-                    ["HoldTime"] = 0,
-                },
+script_key = "pyiRWHDKgOjmZKnTBYVVFIUAyzVhNHcc"
+getgenv().Team = "Pirates"
+getgenv().WeaponsSetting = {
+    ["Melee"] = {
+        ["Enable"] = true,
+        ["Delay"] = 3, 
+        ["SwitchNextWeaponIfCooldown"] = true, 
+        ["Skills"] = {
+            ["Z"] = {
+                ["Enable"] = true,
+                ["NoPredict"] = true, 
+                ["HoldTime"] = 1.2,
+                ["TimeToNextSkill"] = 0,
+            },
+        [ "X"] = {
+                ["Enable"] = true,
+                ["HoldTime"] = 0.1,
+                ["TimeToNextSkill"] = 0, 
+            },
 
-                ["C"] = {
-                    ["Enable"] = true,
-                    ["HoldTime"] = 0,
-                },
+            ["C"] = {
+                ["Enable"] = true,
+                ["HoldTime"] = 0.4,
+                ["TimeToNextSkill"] = 0,
             },
         },
-        ["Blox Fruit"] = {
-            ["Enable"] = false,
-            ["Delay"] = 2,
-            ["Skills"] = {
-                ["Z"] = {
-                    ["Enable"] = true,
-                    ["HoldTime"] = 0,
-                },
-                ["X"] = {
-                    ["Enable"] = true,
-                    ["HoldTime"] = 2,
-                },
-                ["C"] = {
-                    ["Enable"] = false,
-                    ["HoldTime"] = 0,
-                },
-                ["V"] = {
-                    ["Enable"] = false,
-                    ["HoldTime"] = 0,
-                },
-                ["F"] = {
-                    ["Enable"] = false,
-                    ["HoldTime"] = 0,
-                },
-            },
-        },
-        ["Gun"] = {
-            ["Enable"] = true,
-            ["Delay"] = 1,
-            ["Skills"] = {
-                ["Z"] = {
-                    ["Enable"] = true,
-                    ["HoldTime"] = 0,
-                },
-                ["X"] = {
-                    ["Enable"] = true,
-                    ["HoldTime"] = 0,
-                },
-            },
-        },
-        ["Sword"] = {
-            ["Enable"] = false,
-            ["Delay"] = 1,
-            ["Skills"] = {
-                ["Z"] = {
-                    ["Enable"] = true,
-                    ["HoldTime"] = 0,
-                },
-                ["X"] = {
-                    ["Enable"] = true,
-                    ["HoldTime"] = 0,
-                },
-            },
-        }
     },
-    ["Webhooks"] = {
-        ["Link Webhook"] = "https://discord.com/api/webhooks/1235172404251332649/dajv2tfzl6Q6ELo3MEmSjlKhRsmIi15QW5r50jRGSZqPogDfOMs0yBt9aWLa38tLxly6",
-        ["Toggle Webhook"] = true
+    ["Blox Fruit"] = {
+        ["Enable"] = false,
+        ["Delay"] = 4,
+        ["SwitchNextWeaponIfCooldown"] = true,
+        ["Skills"] = {
+            ["Z"] = {
+                ["Enable"] = true,
+                ["HoldTime"] = 2,
+                ["TimeToNextSkill"] = 0, -- cf by eric
+            },
+            ["X"] = {
+                ["Enable"] = true,
+                ["HoldTime"] = 0.3,
+                ["TimeToNextSkill"] = 0,
+            },
+
+            ["C"] = {
+                ["Enable"] = true,
+                ["HoldTime"] = 0.3,
+                ["TimeToNextSkill"] = 0.5, -- eric
+            },
+            ["V"] = {
+                ["Enable"] = true,
+                ["HoldTime"] = 0.3,
+                ["TimeToNextSkill"] = 0.5, -- eric on top
+            },
+            ["F"] = {
+                ["Enable"] = true,
+                ["HoldTime"] = 0,
+                ["TimeToNextSkill"] = 0.5,
+            },
+        },
     },
-    ["ChatSpam"] = {"RafaNGU Hub On Top", "No Skill? Using RafaNGU"},
-    ["MinBountyHunt"] = 0,
-    ["MaxBountyHunt"] = 30000000,
-    ["SafeHealth"] = 4000
+    ["Sword"] = {
+        ["Enable"] = true,
+        ["Delay"] = 1,
+        ["Skills"] = {
+            ["Z"] = {
+                ["Enable"] = true,
+                ["HoldTime"] = 1.2,
+                ["TimeToNextSkill"] = 0,
+            },
+            ["X"] = {
+                ["Enable"] = true,
+                ["HoldTime"] = 0.5,
+                ["TimeToNextSkill"] = 0,
+            },
+        },
+    },
+    ["Gun"] = {
+        ["Enable"] = false,
+        ["Delay"] = 0.5,
+        ["Skills"] = {
+            ["Z"] = {
+                ["Enable"] = false,
+                ["HoldTime"] = 0.1,
+                ["TimeToNextSkill"] = 0,
+            },
+            ["X"] = {
+                ["Enable"] = true,
+                ["HoldTime"] = 0.1,
+                ["TimeToNextSkill"] = 0,
+            },
+        },
+    },
 }
-loadstring(game:HttpGet("https://raw.githubusercontent.com/LumosSera/SeraHub/main/AutoBounty.lua"))()
+getgenv().Theme = { -- getgenv().Theme = false 
+    OldTheme = false,
+    Name="Ayaka", --"Raiden","Ayaka","Hutao","Yelan","Miko","Nahida","Ganyu","Keqing","Nilou","Barbara","Zhongli","Layla"
+    Custom={
+            ["Enable"] = true,
+            ['char_size'] = UDim2.new(0.668, 0, 1.158, 0),
+            ['char_pos'] = UDim2.new(0.463, 0, -0.105, 0),
+            ['title_color'] = Color3.fromRGB(255, 221, 252),
+            ['titleback_color'] = Color3.fromRGB(169, 20, 255),
+            ['list_color'] = Color3.fromRGB(255, 221, 252),
+            ['liststroke_color'] = Color3.fromRGB(151, 123, 207), 
+            ['button_color'] = Color3.fromRGB(255, 221, 252)
+       }
+}
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/b6d24ef1f7dab9c7b22f259a3db6c47e.lua"))()
