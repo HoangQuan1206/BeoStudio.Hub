@@ -75,11 +75,11 @@ getgenv().WeaponsSetting = {
         },
     },
     ["Gun"] = {
-        ["Enable"] = false,
+        ["Enable"] = true,
         ["Delay"] = 0.5,
         ["Skills"] = {
             ["Z"] = {
-                ["Enable"] = false,
+                ["Enable"] = true,
                 ["HoldTime"] = 0.1,
                 ["TimeToNextSkill"] = 0,
             },
