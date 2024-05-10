@@ -8,7 +8,7 @@ spawn(function()
     end
 end)
 getgenv().Setting = {
-    ["Team"] = "Pirates", --Marines,Piratess
+    ["Team"] = "Pirates", 
     ["Webhook"] = {
         ["Enabled"] = true,
         ["Url Webhook"] = "https://discord.com/api/webhooks/1211893513093128204/FfjM6YVUu2FZO7wNWDRdNeLPOeabjMA39L3bGLOu2_V5323gB52AeVVFrlygrj8rUh4f", 
@@ -19,7 +19,7 @@ getgenv().Setting = {
     },
     ["Click"] = {
         ["Enable"] = true,
-        ["Click Gun"] = false,
+        ["Click Gun"] = true,
         ["OnLowHealthDisable"] = true,
         ["LowHealth"] = 3000,
     },
@@ -33,7 +33,7 @@ getgenv().Setting = {
         ["Enable"] = false,
     },
     ["Invisible"] = fales,
-    ["White Screen"] = true,
+    ["White Screen"] = false,
     ["GunMethod"] = true, 
     ["SpamSkill"] = false, 
     ["Weapons"] = {
