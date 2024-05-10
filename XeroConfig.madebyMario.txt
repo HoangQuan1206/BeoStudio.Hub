@@ -1,5 +1,5 @@
 getgenv().Configs = {
-    ["Team"] = "Marines", 
+    ["Team"] = "Pirates", 
     ["Auto Ken"] = true,
     ["Auto Buso"] = true,
     ["Auto turn on race v3"] = true,
@@ -9,7 +9,7 @@ getgenv().Configs = {
     ["Bypass TP"] = true,
     ["Chat"] = {
         ["Enable"] = false,
-        ["Message"] = {"https://discord.gg/dHCJaSsTbB"}, -- Input your message here
+        ["Message"] = {"https://discord.gg/dHCJaSsTbB"}, 
     },
     ["Run When Low Health"] = {
         ["Enable"] = true,
