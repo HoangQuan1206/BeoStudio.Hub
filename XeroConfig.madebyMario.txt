@@ -1,0 +1,110 @@
+getgenv().Configs = {
+    ["Team"] = "Marines", 
+    ["Auto Ken"] = true,
+    ["Auto Buso"] = true,
+    ["Auto turn on race v3"] = true,
+    ["Auto turn on race v4"] = false,
+    ["FPS Boost"] = true,
+    ["Click Time"] = 0.2,
+    ["Bypass TP"] = true,
+    ["Chat"] = {
+        ["Enable"] = false,
+        ["Message"] = {"https://discord.gg/dHCJaSsTbB"}, -- Input your message here
+    },
+    ["Run When Low Health"] = {
+        ["Enable"] = true,
+        ["Health"] = 4000,
+        ["Come back"] = false
+    },
+    ["Region"] = "Germany", 
+    ["Weapons"] = {
+        ["Melee"] = {
+            ["Enable"] = true,
+            ["Delay"] = 1.75,
+            ["Skills"] = {
+                ["Z"] = {
+                    ["Enable"] = true,
+                    ["HoldTime"] = 1,
+                },
+                ["X"] = {
+                    ["Enable"] = true,
+                    ["HoldTime"] = 0,
+                },
+                ["C"] = {
+                    ["Enable"] = true,
+                    ["HoldTime"] = 0,
+                }
+            }
+        },
+        ["Fruit"] = {
+            ["Enable"] = false,
+            ["Delay"] = 1.8,
+            ["Skills"] = {
+                ["Z"] = {
+                    ["Enable"] = true,
+                    ["HoldTime"] = 0,
+                },
+                ["X"] = {
+                    ["Enable"] = true,
+                    ["HoldTime"] = 0,
+                },
+
+                ["C"] = {
+                    ["Enable"] = false,
+                    ["HoldTime"] = 0,
+                },
+                ["V"] = {
+                    ["Enable"] = false,
+                    ["HoldTime"] = 0,
+                },
+                ["F"] = {
+                    ["Enable"] = false,
+                    ["HoldTime"] = 0,
+                }
+            }
+        },
+        ["Sword"] = {
+            ["Enable"] = true,
+            ["Delay"] = 1,
+            ["Skills"] = {
+                ["Z"] = {
+                    ["Enable"] = true,
+                    ["HoldTime"] = 0.2,
+                },
+                ["X"] = {
+                    ["Enable"] = true,
+                    ["HoldTime"] = 0.5,
+                }
+            }
+        },
+        ["Gun"] = {
+            ["Enable"] = true,
+            ["Delay"] = 0.5,
+            ["Skills"] = {
+                ["Z"] = {
+                    ["Enable"] = true,
+                    ["HoldTime"] = 0,
+                },
+                ["X"] = {
+                    ["Enable"] = true,
+                    ["HoldTime"] = 0,
+                }
+            }
+        }
+    },
+    ["Theme"] = {
+        ["Enable"] = true,
+        ["Name"] = "Ayaka", 
+        ["Custom Theme"] = {
+            ["Enable"] = true,
+            ["Text Color"] = Color3.fromRGB(231, 85, 88),
+            ["Character Position"] = UDim2.new(0.563000023, 0, -0.174999997, 0)
+        }
+    },
+    ["Webhook"] = {
+        ["Enable"] = true,
+        ["Url"] = "https://discord.com/api/webhooks/1238501388410159276/xE4bTAdQzM2iW8BtpgQCV63EpSC4uJGl7JFFycD7Rt_1hhN3-64zqqJUcX5L85FYUehF",
+        ["Image"] = "https://media.discordapp.net/attachments/1235168627691491369/1238501674495246406/z5027037072518_668558d5267ac21ceb84d8d645ab1705.jpg?ex=663f8411&is=663e3291&hm=634c0f2d861f1c0fb87f1df221eddeeea88182059efa702ca8c977d3075e2355&=&format=webp&width=582&height=577"
+    }
+}
+loadstring(game:HttpGet("https://xerohub.click/script/autobounty.lua"))() 
