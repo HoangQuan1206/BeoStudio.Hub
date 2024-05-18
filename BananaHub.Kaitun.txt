@@ -1,0 +1,25 @@
+repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
+getgenv().Key = "5c8af781f1ab9bee"
+getgenv().SettingFarm ={
+    ["GodHuman"] = true,
+    ["Priority Get Melee Sea 3"] = true,
+    ["Auto Race V2-V3"] = true,
+    ["Auto Saber"] = true,
+    ["Auto Pole"] = true,
+    ["Cursed Dual Katana"] = true,
+    ["SoulGuitar"] = true,
+    ["Teleport To Fruit"] = true,
+    ["Hop Fruit 1M Quest Third Sea"] = false,
+    ["White Screen"] = true,
+    ["Buy Haki"] = {
+        ["Enhancement"] = true,
+        ["Skyjump"] = true,
+        ["Flash Step"] = true,
+        ["Observation"] = true,
+    },
+
+    ["Blox Fruit Sniper"] = {},
+    ["Lock Fruit"] = {},
+}
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/obiiyeuem/vthangsitink/main/KaitunTrash.lua"))()
