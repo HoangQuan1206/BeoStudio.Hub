@@ -17,7 +17,7 @@ getgenv().PlayerSetting = {
     UseRaceV3 = true,
     SmartUseRaceV3= true,
     DashIfV4 = true,
-    Dash=true,
+    Dash= false,
     IgnoreInCombat = true, 
     ChatKillEnable = false,
     Chat = {"EricS1","gg"},
@@ -128,7 +128,7 @@ getgenv().WeaponsSetting = {
         ["Delay"] = 0.1,
         ["Skills"] = {
             ["Z"] = {
-                ["Enable"] = false,
+                ["Enable"] = true,
                 ["HoldTime"] = 0.1,
                 ["TimeToNextSkill"] = 0,
             },
