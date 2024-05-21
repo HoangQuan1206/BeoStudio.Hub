@@ -1,0 +1,157 @@
+script_key = "pyiRWHDKgOjmZKnTBYVVFIUAyzVhNHcc"
+getgenv().Team = "Pirates"
+getgenv().WebhookSetting = {
+    Enable = true,
+    Url = "https://discord.com/api/webhooks/1222182420493766826/pmLwx3jgROMw6oA2_yQ6eDcEiXpzik1VQdTuIGHRW6h26Ve4is1oe3zzI47EN-fhJxIw",
+    Embed = true,
+    StoredFruit = true,
+    ImageEmbed = true,
+    CustomImage = true,
+    CustomImageUrl = "https://media.discordapp.net/attachments/1241753812373606470/1242281840958505051/z5027037072518_668558d5267ac21ceb84d8d645ab1705.jpg?ex=664d449f&is=664bf31f&hm=4c3f498d163ae14ba8a2fa6f8f4aa1503ded904e45e2247bf2dd6b27a799acf2&=&format=webp&width=580&height=576", 
+    OnServerHop = false,
+    BountyChanged = true,
+}
+getgenv().PlayerSetting = {
+    SafeMode = true,
+    SafeModeHealth = {4300,70},
+    UseRaceV3 = true,
+    SmartUseRaceV3= true,
+    DashIfV4 = true,
+    Dash=true,
+    IgnoreInCombat = true, 
+    ChatKillEnable = false,
+    Chat = {"EricS1","gg"},
+    IgnoreFriends = false, 
+}
+getgenv().AttackSetting = {
+    ForceMelee = true,
+    ForceMeleeTime = 3.5,
+    StopAttack =true, 
+    StopAttackAtHealth = 80,
+    FastAttack=true,
+}
+getgenv().UseSkillSetting = {
+    -- Three Methods: "Normal", "Fast", "Spam", "SpamAll"
+    MethodIfTargetOnV4 = "Fast",
+    MethodIfPlayerOnV4 = "SpamAll",
+    MethodIfTargetUseFruit = {Fruits={},Method="Fast"},
+    NormalMethod = "Normal",
+    LowHealthPlayerCondition = { 
+        Enable = true,
+        Health = 70,--%Health That Are Low
+        Method = "Fast",
+    },
+    LowHealthTargetCondition = {
+        Enable = true,
+        Health = 30,--%Health That Are Low
+        DelayFirstTime = {true,2}, 
+        Method = "Normal",
+        WaitTime = 1.5,
+    }
+}
+getgenv().WeaponsSetting = {
+    ["Melee"] = {
+        ["Enable"] = true,
+        ["Delay"] = 3, 
+        ["SwitchNextWeaponIfCooldown"] = true,
+        ["Skills"] = {
+            ["Z"] = {
+                ["Enable"] = true,
+                ["NoPredict"] = true, 
+                ["HoldTime"] = 1.2,
+                ["TimeToNextSkill"] = 0, 
+            },
+        [ "X"] = {
+                ["Enable"] = true,
+                ["HoldTime"] = 0.14,
+                ["TimeToNextSkill"] = 0,
+            },
+
+            ["C"] = {
+                ["Enable"] = true,
+                ["HoldTime"] = 0.4,
+                ["TimeToNextSkill"] = 0,
+            },
+        },
+    },
+    ["Blox Fruit"] = {
+        ["Enable"] = false,
+        ["Delay"] = 4,
+        ["SwitchNextWeaponIfCooldown"] = true,
+        ["Skills"] = {
+            ["Z"] = {
+                ["Enable"] = true,
+                ["HoldTime"] = 2,
+                ["TimeToNextSkill"] = 0,
+            },
+            ["X"] = {
+                ["Enable"] = true,
+                ["HoldTime"] = 0.2,
+                ["TimeToNextSkill"] = 0,
+            },
+
+            ["C"] = {
+                ["Enable"] = true,
+                ["HoldTime"] = 0.3,
+                ["TimeToNextSkill"] = 0,
+            },
+            ["V"] = {
+                ["Enable"] = true,
+                ["HoldTime"] = 0.2,
+                ["TimeToNextSkill"] = 0,
+            },
+            ["F"] = {
+                ["Enable"] = false,
+                ["HoldTime"] = 0,
+                ["TimeToNextSkill"] = 0,
+            },
+        },
+    },
+    ["Sword"] = {
+        ["Enable"] = true,
+        ["Delay"] = 1.3,
+        ["Skills"] = {
+            ["Z"] = {
+                ["Enable"] = true,
+                ["HoldTime"] = 1.2,
+                ["TimeToNextSkill"] = 0,
+            },
+            ["X"] = {
+                ["Enable"] = true,
+                ["HoldTime"] = 0.5,
+                ["TimeToNextSkill"] = 0,
+            },
+        },
+    },
+    ["Gun"] = {
+        ["Enable"] = true,
+        ["Delay"] = 0.1,
+        ["Skills"] = {
+            ["Z"] = {
+                ["Enable"] = false,
+                ["HoldTime"] = 0.1,
+                ["TimeToNextSkill"] = 0,
+            },
+            ["X"] = {
+                ["Enable"] = true,
+                ["HoldTime"] = 0.1,
+                ["TimeToNextSkill"] = 0,
+            },
+        },
+    },
+}
+getgenv().Theme = { -- getgenv().Theme = false if you want to disable
+    OldTheme = false,
+    Name="Hutao", --"Raiden","Ayaka","Hutao","Yelan","Miko","Nahida","Ganyu","Keqing","Nilou","Barbara","Zhongli","Layla"
+    Custom={
+            ["Enable"] = false,
+            ['char_size'] = UDim2.new(0.668, 0, 1.158, 0),
+            ['char_pos'] = UDim2.new(0.463, 0, -0.105, 0),
+            ['title_color'] = Color3.fromRGB(255, 221, 252),
+            ['titleback_color'] = Color3.fromRGB(169, 20, 255),
+            ['list_color'] = Color3.fromRGB(255, 221, 252),
+            ['liststroke_color'] = Color3.fromRGB(151, 123, 207),
+            ['button_color'] = Color3.fromRGB(255, 221, 252)
+       }
+}
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/248f97d7a28a4d09c641d8279a935333.lua"))()
