@@ -1,0 +1,33 @@
+_G.WINDYKAITUN = true
+_G.Mics = {
+    ["Remove Terrain"] = false,
+    ["White Screen"] = false,
+    ["Disabled Notify"] = false,
+    ["Auto Rejoin"] = false,
+    ["Delay Per Rejoin"] = 3600,
+    ["Max-Distance Bypass TP"] = 1500
+}
+_G.Settings = {
+    ["Team"] = "Pirates",
+    ["Enabled Skip Farm"] = true,
+    ["Auto Do Level Stuff"] = true,
+    ["Auto Collect Fruit"] = true,
+    ["Auto Store Fruit"] = true,
+    ["Auto Mastery Melee"] = true,
+    ["Auto Saber"] = true,
+    ["Auto Pole"] = true,
+    ["Auto New World 2"] = true,
+    ["Auto Bartilo Quest"] = true,
+    ["Auto Rengoku"] = true,
+    ["Auto Flamingo Access"] = true,
+    ["Auto Midnight Blade"] = true,
+    ["Auto Buy 3 Legendary Sword"] = true,
+    ["Auto Buy Legendary Haki"] = true,
+    ["Auto Buy All When Level More Than 350"] = true,
+    ["Auto New World 3"] = true,
+    ["Auto Yama"] = true,
+    ["Auto Tushita"] = true,
+    ["Auto Soul Guitar"] = true
+}
+_G.Windy_Key = "WindyHubFreeKey"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ItzWindy01/WindyXBypass/main/KaitunLoadder.lua"))()
