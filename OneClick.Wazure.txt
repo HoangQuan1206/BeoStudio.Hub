@@ -1,0 +1,18 @@
+getgenv().OneClickSetting = {
+        Enable= true,
+        UnlimitGetQuest= true,
+        TripleQuest= true,
+        AutoAddStats= qtrue,
+        RedeemCode=true,
+        Sea2KeyHop=false,
+        FruitEat = { --Priority, Name, 
+            [1] = {"Ice-Ice","Magma-Magma","Flame-Flame,"Sound-Sound","Quake-Quake",},
+            [2] = {"Dough-Dough","Kitsune-Kitsune","Mammoth-Mammoth",}
+        },
+        EatFruitFromStorage = true,
+        SnipeFruit = true,
+        SnipeFruitMirage = true,
+    }
+getgenv().Team = "Pirates"
+getgenv().AutoLoad = false --Will Load Script On Server Hop
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf53bc6104dabe8e19562e5cc2.lua"))() 
