@@ -2,7 +2,7 @@ getgenv().OneClickSetting = {
         Enable= true,
         UnlimitGetQuest= true,
         TripleQuest= true,
-        AutoAddStats= qtrue,
+        AutoAddStats= true,
         RedeemCode=true,
         Sea2KeyHop=false,
         FruitEat = { --Priority, Name, 
@@ -14,5 +14,5 @@ getgenv().OneClickSetting = {
         SnipeFruitMirage = true,
     }
 getgenv().Team = "Pirates"
-getgenv().AutoLoad = false --Will Load Script On Server Hop
+getgenv().AutoLoad = true --Will Load Script On Server Hop
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf53bc6104dabe8e19562e5cc2.lua"))() 
