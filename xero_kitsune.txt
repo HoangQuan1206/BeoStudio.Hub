@@ -73,17 +73,17 @@ getgenv().Configs = {
                     ["HoldTime"] = 1.5,
                 },
                 ["X"] = {
-                    ["Enable"] = true,
+                    ["Enable"] = false,
                     ["HoldTime"] = 0,
                 }
             }
         },
         ["Gun"] = {
-            ["Enable"] = false,
+            ["Enable"] = true,
             ["Delay"] = 1.5,
             ["Skills"] = {
                 ["Z"] = {
-                    ["Enable"] = true,
+                    ["Enable"] = false,
                     ["HoldTime"] = 0,
                 },
                 ["X"] = {
