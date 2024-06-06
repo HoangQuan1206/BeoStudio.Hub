@@ -103,7 +103,7 @@ getgenv().Configs = {
         }
     },
     ["Webhook"] = {
-        ["Enable"] = false,
+        ["Enable"] = true,
         ["Url"] = "https://discord.com/api/webhooks/1248098766012289136/rjZi4Cwk13lJJZ7i_mtTrSMb7R51wnqqIZGIOBn1yX6tN8whVIeXJyKBMwoJMIwlHzAM",
         ["Image"] = "https://images-ext-1.discordapp.net/external/tfbBfN_DhDOeivtzadGaN97w_ySGEVhYR9Oh996itYg/%3Fsize%3D4096/https/cdn.discordapp.com/avatars/1240661709711212594/f1a2ec71d2f15178eb0e3372cae0664d.png?format=webp&quality=lossless&width=576&height=576"
     }
