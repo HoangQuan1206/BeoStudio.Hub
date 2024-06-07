@@ -35,9 +35,9 @@ getgenv().Setting = {
         ["Enable"] = false,
     },
     ["Invisible"] = true,
-    ["White Screen"] = true,
+    ["White Screen"] = false,
     ["GunMethod"] = true, --Support Only Melee And Gun,Not Invisible, Turn On Enabled Gun and Melee Please
-    ["SpamSkill"] = false, -- Will use all skills as fast as possbile ignore holding skills
+    ["SpamSkill"] = true, -- Will use all skills as fast as possbile ignore holding skills
     ["Weapons"] = {
         ["Melee"] = {
             ["Enable"] = true,
