@@ -5,7 +5,7 @@ getgenv().Configs = {
     ["Auto turn on race v3"] = true,
     ["Auto turn on race v4"] = true,
     ["FPS Boost"] = false,
-    ["Click Time"] = 0.2,
+    ["Click Time"] = 0.4,
     ["Bypass TP"] = true,
     ["Chat"] = {
         ["Enable"] = false,
@@ -20,7 +20,7 @@ getgenv().Configs = {
     ["Weapons"] = {
         ["Melee"] = {
             ["Enable"] = true,
-            ["Delay"] = 1.75,
+            ["Delay"] = 0.5,
             ["Skills"] = {
                 ["Z"] = {
                     ["Enable"] = true,
@@ -38,7 +38,7 @@ getgenv().Configs = {
         },
         ["Fruit"] = {
             ["Enable"] = true,
-            ["Delay"] = 1.8,
+            ["Delay"] = 1,
             ["Skills"] = {
                 ["Z"] = {
                     ["Enable"] = true,
@@ -65,21 +65,21 @@ getgenv().Configs = {
         },
         ["Sword"] = {
             ["Enable"] = true,
-            ["Delay"] = 1,
+            ["Delay"] = 0.4,
             ["Skills"] = {
                 ["Z"] = {
                     ["Enable"] = true,
-                    ["HoldTime"] = 0.2,
+                    ["HoldTime"] = 1.5,
                 },
                 ["X"] = {
                     ["Enable"] = true,
-                    ["HoldTime"] = 0.5,
+                    ["HoldTime"] = 0,
                 }
             }
         },
         ["Gun"] = {
             ["Enable"] = true,
-            ["Delay"] = 0.5,
+            ["Delay"] = 1,
             ["Skills"] = {
                 ["Z"] = {
                     ["Enable"] = false,
