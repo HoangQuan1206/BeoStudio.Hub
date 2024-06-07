@@ -1,69 +1,47 @@
-repeat wait()
-until game:IsLoaded()
-wait()
-spawn(function()
-    while wait() do 
-        pcall(function()
-          game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(TableChat[math.random(1,#TableChat)],"All")
-            wait(45)
-        end)
-    end
-end)
-getgenv().Setting = {
-    ["Team"] = "Pirates", 
-    ["Webhook"] = {
-        ["Enabled"] = true,
-        ["Url Webhook"] = "https://discord.com/api/webhooks/1248098766012289136/rjZi4Cwk13lJJZ7i_mtTrSMb7R51wnqqIZGIOBn1yX6tN8whVIeXJyKBMwoJMIwlHzAM", 
-    },
-    ["Misc"] = {
-        ["AutoBuyRandomandStoreFruit"] = false,
-        ["AutoBuySurprise"] = false,
-    },
-    ["Click"] = {
-        ["Enable"] = true,
-        ["Click Gun"] = true,
-        ["OnLowHealthDisable"] = true,
-        ["LowHealth"] = 4500,
-    },
-    ["SafeZone"] = {
-        ["Enable"] = true,
-        ["LowHealth"] = 4500,
-        ["MaxHealth"] = 5000,
-        ["Teleport Y"] = 2000
-    },
-    ["Race V4"] = {
+getgenv().Configs = {
+    ["Team"] = "Pirates", -- Pirates/Marines
+    ["Auto Ken"] = true,
+    ["Auto Buso"] = true,
+    ["Auto turn on race v3"] = true,
+    ["Auto turn on race v4"] = true,
+    ["FPS Boost"] = false,
+    ["Click Time"] = 0.2,
+    ["Bypass TP"] = true,
+    ["Chat"] = {
         ["Enable"] = false,
+        ["Message"] = {"get good losers", "no skill?", "dont cry xd", "u cant win lol", "try to hunt me", "get a good gaming chair losers", "feeling no skill?"}, -- Input your message here
     },
-    ["Invisible"] = true,
-    ["White Screen"] = false,
-    ["GunMethod"] = true, --Support Only Melee And Gun,Not Invisible, Turn On Enabled Gun and Melee Please
-    ["SpamSkill"] = true, -- Will use all skills as fast as possbile ignore holding skills
+    ["Run When Low Health"] = {
+        ["Enable"] = true,
+        ["Health"] = 4000,
+        ["Come back"] = false
+    },
+    ["Region"] = "Singapore", -- Singapore, United States, Germany, France, India, ??? ...
     ["Weapons"] = {
         ["Melee"] = {
             ["Enable"] = true,
-            ["Delay"] = 3,
+            ["Delay"] = 1.75,
             ["Skills"] = {
                 ["Z"] = {
                     ["Enable"] = true,
                     ["HoldTime"] = 1,
                 },
-               [ "X"] = {
+                ["X"] = {
                     ["Enable"] = true,
-                    ["HoldTime"] = 0.5,
+                    ["HoldTime"] = 0,
                 },
-
                 ["C"] = {
                     ["Enable"] = true,
-                    ["HoldTime"] = 0.5,
-                },
-            },
+                    ["HoldTime"] = 0,
+                }
+            }
         },
-        ["Blox Fruit"] = {
+        ["Fruit"] = {
             ["Enable"] = false,
-            ["Delay"] = 0.5,
+            ["Delay"] = 1.8,
             ["Skills"] = {
                 ["Z"] = {
-                    ["Enable"] = false,
+                    ["Enable"] = true,
                     ["HoldTime"] = 0,
                 },
                 ["X"] = {
@@ -82,22 +60,8 @@ getgenv().Setting = {
                 ["F"] = {
                     ["Enable"] = false,
                     ["HoldTime"] = 0,
-                },
-            },
-        },
-        ["Gun"] = {
-            ["Enable"] = true,
-            ["Delay"] = 2,
-            ["Skills"] = {
-                ["Z"] = {
-                    ["Enable"] = true,
-                    ["HoldTime"] = 1,
-                },
-                ["X"] = {
-                    ["Enable"] = true,
-                    ["HoldTime"] = 0,
-                },
-            },
+                }
+            }
         },
         ["Sword"] = {
             ["Enable"] = true,
@@ -105,24 +69,42 @@ getgenv().Setting = {
             ["Skills"] = {
                 ["Z"] = {
                     ["Enable"] = true,
-                    ["HoldTime"] = 1,
+                    ["HoldTime"] = 0.2,
+                },
+                ["X"] = {
+                    ["Enable"] = true,
+                    ["HoldTime"] = 0.5,
+                }
+            }
+        },
+        ["Gun"] = {
+            ["Enable"] = true,
+            ["Delay"] = 0.5,
+            ["Skills"] = {
+                ["Z"] = {
+                    ["Enable"] = true,
+                    ["HoldTime"] = 0,
                 },
                 ["X"] = {
                     ["Enable"] = true,
                     ["HoldTime"] = 0,
-                },
-            },
-        },
+                }
+            }
+        }
+    },
+    ["Theme"] = {
+        ["Enable"] = true,
+        ["Name"] = "Hutao", -- Hutao, Raiden, Ayaka, Yelan
+        ["Custom Theme"] = {
+            ["Enable"] = true,
+            ["Text Color"] = Color3.fromRGB(231, 85, 88),
+            ["Character Position"] = UDim2.new(0.563000023, 0, -0.174999997, 0)
+        }
+    },
+    ["Webhook"] = {
+        ["Enable"] = true,
+        ["Url"] = "https://discord.com/api/webhooks/1248098766012289136/rjZi4Cwk13lJJZ7i_mtTrSMb7R51wnqqIZGIOBn1yX6tN8whVIeXJyKBMwoJMIwlHzAM",
+        ["Image"] = "https://media.discordapp.net/attachments/973570282356891719/1097969638333222963/banana_cat.jpg?ex=666361e9&is=66621069&hm=4f1b8d5dfce1ad04572e20a6ce93cb95f1018f4cca9fd15a192eec83d96054a1&=&format=webp&width=603&height=576"
     }
 }
-repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
-spawn(function()
-	while wait() do
-			game:GetService("CoreGui").RobloxPromptGui.promptOverlay.ChildAdded:Connect(function(child)
-				if child.Name == 'ErrorPrompt' and child:FindFirstChild('MessageArea') and child.MessageArea:FindFirstChild("ErrorFrame") then
-					game:GetService("TeleportService"):Teleport(game.PlaceId)
-				end
-			end)
-		end
-	end)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/obiiyeuem/vthangsitink/main/BountyShit.lua"))()
+loadstring(game:HttpGet("https://xerohub.click/script/autobounty.lua"))() 
