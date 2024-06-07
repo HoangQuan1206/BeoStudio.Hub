@@ -1,5 +1,5 @@
 getgenv().Configs = {
-    ["Team"] = "Pirates", -- Pirates/Marines
+    ["Team"] = "Pirates", 
     ["Auto Ken"] = true,
     ["Auto Buso"] = true,
     ["Auto turn on race v3"] = true,
@@ -37,7 +37,7 @@ getgenv().Configs = {
             }
         },
         ["Fruit"] = {
-            ["Enable"] = false,
+            ["Enable"] = true,
             ["Delay"] = 1.8,
             ["Skills"] = {
                 ["Z"] = {
@@ -50,7 +50,7 @@ getgenv().Configs = {
                 },
 
                 ["C"] = {
-                    ["Enable"] = false,
+                    ["Enable"] = true,
                     ["HoldTime"] = 0,
                 },
                 ["V"] = {
@@ -58,7 +58,7 @@ getgenv().Configs = {
                     ["HoldTime"] = 0,
                 },
                 ["F"] = {
-                    ["Enable"] = false,
+                    ["Enable"] = true,
                     ["HoldTime"] = 0,
                 }
             }
@@ -82,7 +82,7 @@ getgenv().Configs = {
             ["Delay"] = 0.5,
             ["Skills"] = {
                 ["Z"] = {
-                    ["Enable"] = true,
+                    ["Enable"] = false,
                     ["HoldTime"] = 0,
                 },
                 ["X"] = {
