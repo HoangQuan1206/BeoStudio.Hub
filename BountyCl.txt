@@ -1,0 +1,97 @@
+getgenv().config = {
+    ["Team"] = "Pirates",
+    ["Use Race"] = {
+        ["V3"] = true,
+        ["V4"] = true
+    },
+    ["Info Screen"] = true,
+    ["White Screen"] = false,
+    ["BypassTp"] = true,
+    ["SkipFruit"] = {
+        "Portal-Portal"
+    },
+    ["Skip Race V4 User"] = true,
+    ["MainSkillToggle"] = {
+        ["Melee"] = {
+            ["Enable"] = true,
+            ["Delay"] = 1.75,
+            ["Skills"] = {
+                ["Z"] = {
+                    ["Enable"] = true,
+                    ["HoldTime"] = 2.5,
+                },
+                [ "X"] = {
+                    ["Enable"] = true,
+                    ["HoldTime"] = 0,
+                },
+
+                ["C"] = {
+                    ["Enable"] = true,
+                    ["HoldTime"] = 0,
+                },
+            },
+        },
+        ["Blox Fruit"] = {
+            ["Enable"] = true,
+            ["Delay"] = 2,
+            ["Skills"] = {
+                ["Z"] = {
+                    ["Enable"] = true,
+                    ["HoldTime"] = 0,
+                },
+                ["X"] = {
+                    ["Enable"] = true,
+                    ["HoldTime"] = 2,
+                },
+                ["C"] = {
+                    ["Enable"] = true,
+                    ["HoldTime"] = 0,
+                },
+                ["V"] = {
+                    ["Enable"] = false,
+                    ["HoldTime"] = 0,
+                },
+                ["F"] = {
+                    ["Enable"] = false,
+                    ["HoldTime"] = 0,
+                },
+            },
+        },
+        ["Gun"] = {
+            ["Enable"] = true,
+            ["Delay"] = 1,
+            ["Skills"] = {
+                ["Z"] = {
+                    ["Enable"] = false,
+                    ["HoldTime"] = 0,
+                },
+                ["X"] = {
+                    ["Enable"] = true,
+                    ["HoldTime"] = 0,
+                },
+            },
+        },
+        ["Sword"] = {
+            ["Enable"] = true,
+            ["Delay"] = 1,
+            ["Skills"] = {
+                ["Z"] = {
+                    ["Enable"] = true,
+                    ["HoldTime"] = 0.2,
+                },
+                ["X"] = {
+                    ["Enable"] = true,
+                    ["HoldTime"] = 0.2,
+                },
+            },
+        }
+    },
+    ["Webhooks"] = {
+        ["Link Webhook"] = "https://discord.com/api/webhooks/1249917525958066186/drQ9gJesLo7wb-JhtCayOaQjrCH_KmUp7EW7y4u1fwddzO6wj7oXKA86F4_dO6X4U3Cx",
+        ["Toggle Webhook"] = true
+    },
+    ["MinBountyHunt"] = 0,
+    ["MaxBountyHunt"] = 30000000,
+    ["SafeHealth"] = 4000
+}
+loadstring(game:HttpGet("https://serahub.site/script.txt"))()
