@@ -15,7 +15,7 @@ getgenv().Setting = {
         ["Url Webhook"] = "https://discord.com/api/webhooks/1248098766012289136/rjZi4Cwk13lJJZ7i_mtTrSMb7R51wnqqIZGIOBn1yX6tN8whVIeXJyKBMwoJMIwlHzAM", --Your Url
     },
     ["Misc"] = {
-        ["AutoBuyRandomandStoreFruit"] = false,
+        ["AutoBuyRandomandStoreFruit"] = true,
         ["AutoBuySurprise"] = false,
     },
     ["Click"] = {
@@ -79,7 +79,7 @@ getgenv().Setting = {
                     ["HoldTime"] = 0,
                 },
                 ["F"] = {
-                    ["Enable"] = true,
+                    ["Enable"] = false,
                     ["HoldTime"] = 0,
                 },
             },
@@ -89,7 +89,7 @@ getgenv().Setting = {
             ["Delay"] = 2,
             ["Skills"] = {
                 ["Z"] = {
-                    ["Enable"] = false,
+                    ["Enable"] = true,
                     ["HoldTime"] = 0.7,
                 },
                 ["X"] = {
